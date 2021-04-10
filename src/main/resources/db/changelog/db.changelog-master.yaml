@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: hornetshell
+      changes:
+        - createTable:
+            tableName: smartdata
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: model
+                  type: varchar(255)
+              - column:
+                  name: serial_number
+                  type: varchar(255)
+              - column:
+                  name: capacity_bytes
+                  type: bigint
