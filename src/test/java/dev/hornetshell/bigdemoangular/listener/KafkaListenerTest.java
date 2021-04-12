@@ -140,8 +140,6 @@ class KafkaListenerTest {
 
   @MockBean private SmartDataService smartDataService;
 
-  @Autowired private KafkaListener subject;
-
   @Autowired KafkaTemplate<String, String> kafkaTemplate;
 
   @Test

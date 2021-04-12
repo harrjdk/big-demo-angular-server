@@ -16,7 +16,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
@@ -46,8 +45,6 @@ import org.springframework.web.socket.sockjs.client.WebSocketTransport;
 class SmartDataStompControllerTest {
 
   @MockBean private SmartDataService smartDataService;
-
-  @Autowired private SmartDataStompController subject;
 
   private WebSocketStompClient stompClient;
 
